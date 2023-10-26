@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 
-router.get('/computation', (req, res) => {
+router.get('/', (req, res) => {
   // Get the last digit of your ID (replace this with your actual ID retrieval method)
   const id = parseInt(req.query.id);
   const lastDigit = id % 10;

@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
-const math = require('computation');
 
-app.get('/computation', (req, res) => {
+
+router.get('/computation', (req, res) => {
   // Get the last digit of your ID (replace this with your actual ID retrieval method)
   const id = parseInt(req.query.id);
   const lastDigit = id % 10;
@@ -35,7 +35,4 @@ app.get('/computation', (req, res) => {
   res.send(response);
 });
 
-const port = 3000; // You can specify any port you prefer
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
+module.exports = router;

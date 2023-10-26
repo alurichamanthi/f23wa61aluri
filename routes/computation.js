@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const math = require('mathjs');
+const math = require('computation');
 
 app.get('/computation', (req, res) => {
   // Get the last digit of your ID (replace this with your actual ID retrieval method)
